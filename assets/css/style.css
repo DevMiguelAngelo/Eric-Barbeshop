@@ -1,0 +1,1000 @@
+/*@autor Miguel Angelo */
+
+/*layout*/
+html, body, #home{
+   width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+ }
+ 
+ body{
+    
+    background-attachment: fixed;
+    font-family: Verdana, Tahoma, sans-serif,Arial;
+    background-color: white;
+ }
+
+
+/*Barra de Navegação*/
+nav.navbar-transparente{
+	height: 100px;
+    padding: 15px 0;
+    display: flex;
+    background: black;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FCF223;
+}
+.navbar-light .navbar-toggler{
+    color: rgba(0,0,0,.5);
+    border-color: black;
+}
+.divisor{
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transform: 2ms ease-in;
+    position: relative;
+}
+nav ul li a::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: #FCF223;
+    transition: all 1.5s ease;
+
+}
+nav ul li a:hover:before{
+    width: 100%;  
+}
+
+/*Carousel*/
+/*
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.home .carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home .carousel-item h2{
+	font-size: 80px;
+	color: #ffffff;
+	margin:0 0 10px;
+	opacity: 0;
+}
+.home .carousel-item p{
+	font-size: 30px;
+	margin:0;
+	color: #eeeeee;
+	opacity:0;
+}
+.home .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease ;
+}
+.home .carousel-item.active p{
+	animation: fadeInRight 0.5s ease;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.home .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.home .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.home .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.home .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.home .carousel-control-next, 
+.home .carousel-control-prev{
+	height: 60px;
+	width: 60px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover, 
+.home .carousel-control-prev:hover{
+   box-shadow: 0 0 10px #ffffff;
+}
+.home .carousel-control-next img, 
+.home .carousel-control-prev img{
+   width: 25px;
+}
+.home .carousel-control-next{
+	right: -70px;
+}
+.home .carousel-control-prev{
+	left: -70px;
+}
+
+*/
+/*Photo Principal*/
+
+.photoprinc{
+    width: 100%;
+    
+}
+
+/*Apresentação*/
+
+.caixa {
+
+    height: 550px;
+	padding: 150px ;
+    padding-bottom: 150px;
+    
+}
+
+	
+.btn-custom{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+	border-radius: 10px;
+    
+}
+
+.btn-custom{
+        background: #67A65D;
+        width: 250px;
+        height: 50px;
+		padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        transition: ease-in-out .25s;
+    
+}
+
+.btn-custom:hover{
+  background-color: #333333;
+  color: #67A65D;
+  transition: all 1.5s;
+}
+.textgeral{
+    font-size: 32px;
+   
+}
+.textcaixap{
+    padding: 15px;
+    font-size: 25px;
+    
+}
+/* Baixe Nosso App */
+
+.app{
+    height: 550px;
+    padding: 150px;
+    
+ }
+
+ .textp{
+    font-size: 20px;
+ }
+ 
+
+/*Mapa*/
+.mapa{
+	padding: 200px;
+    
+
+}
+.texto h2{
+	padding: 5px;
+}
+h2{
+	font-size: 21px;
+}
+
+.ftmapa{
+    width: 200px;
+}
+
+/* História */
+
+.texthist{
+    margin-top: 150px;
+}
+
+/* TIme - Profissionais */
+
+
+.time1 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card1:hover {
+    background-image: linear-gradient(#FFEC65, #E6D44E);
+}
+
+.card1 .img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/eric.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card1 .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #fff;
+}
+
+.card1:hover .img {
+    width: 370px;
+    opacity: 1;
+    background-image: url('../img/eric1.jpeg');
+}
+
+.card1:hover .img span {
+    font-size: 28px;
+}
+
+.card1 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card1:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card1 .content p {
+    margin: 0;
+    color:#FFEC65, ;
+}
+
+.card1 .content .title {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.card1 .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card1 .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card1:hover .arrow {
+    transform: rotate(0);
+}
+
+.card1 .arrow span {
+    font-size: 24px;
+}
+
+.card2 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card2:hover {
+    background-image: linear-gradient(#FFEC65, #E6D44E);
+}
+
+.card2 .img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/mr_jones.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card2 .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #fff;
+}
+
+.card2:hover .img {
+    width: 370px;
+    opacity: 1;
+    background-image: url('../img/jones.jpeg');
+}
+
+.card2:hover .img span {
+    font-size: 28px;
+}
+
+.card2 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card2:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card2 .content p {
+    margin: 0;
+    color:#FFEC65, ;
+}
+
+.card2 .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card2 .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card2 .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card2:hover .arrow {
+    transform: rotate(0);
+}
+
+.card2 .arrow span {
+    font-size: 24px;
+}
+
+.card3 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card3:hover {
+    background-image: linear-gradient(#FFEC65, #E6D44E);
+}
+
+.card3 .img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/miguel1.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card3 .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #fff;
+}
+
+.card3:hover .img {
+    width: 370px;
+    opacity: 1;
+    background-image: url('../img/brabo.jpeg');
+}
+
+.card3:hover .img span {
+    font-size: 28px;
+}
+
+.card3 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card3:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card3 .content p {
+    margin: 0;
+    color:#FFEC65, ;
+}
+
+.card3 .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card3 .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card3 .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card3:hover .arrow {
+    transform: rotate(0);
+}
+
+.card3 .arrow span {
+    font-size: 24px;
+}
+
+.card4 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card4:hover {
+    background-image: linear-gradient(#FFEC65, #E6D44E);
+}
+
+.card4 .img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/barber_frente_1.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card4 .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #fff;
+}
+
+.card4:hover .img {
+    width: 370px;
+    opacity: 1;
+}
+
+.card4:hover .img span {
+    font-size: 28px;
+}
+
+.card4 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card4:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card4 .content p {
+    margin: 0;
+    color:#FFEC65, ;
+}
+
+.card4 .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card4 .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card4 .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card4:hover .arrow {
+    transform: rotate(0);
+}
+
+.card4 .arrow span {
+    font-size: 24px;
+}
+
+
+/* Footer */
+footer{
+	background: black;
+	padding: 30px 0;
+}
+
+footer p{
+   color: #fff;
+}
+
+
+    
+/*responsive*/
+@media(max-width: 667px){
+  .home .carousel-control-next, 
+  .home .carousel-control-prev{
+    display: none;
+  }
+  .home .carousel-indicators li{
+  	height: 50px;
+  	width: 50px;
+  }
+  .home .carousel-item h2{
+  	font-size: 40px;
+  }
+  .home .carousel-item p{
+  	font-size: 20px;
+  }
+}
+
+/*Barra de Navegação*/
+/*
+nav.navbar-transparente{
+	height: 100px;
+    padding: 15px;
+    background: black;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+   
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FCF223;
+}
+.navbar-light .navbar-toggler{
+    color: rgba(0,0,0,.5);
+    border-color: black;
+}
+
+nav ul li a:hover:before{
+    width: 30%;  
+}
+*/
+
+/*Apresentação*/
+
+.caixa {
+	height: 600px;
+	padding: 100px ;
+    padding-top: 90px;
+    
+    
+}
+
+	
+.btn-custom{
+    display: flex;
+    padding: 8px;
+	border-radius: 10px;
+}
+
+.btn-custom{
+    width: 250px;
+    height: 40px;
+    padding: 10px 15px;
+    align-items: flex-end;
+    font-size: 14px;
+ 
+}
+
+.imgmenor{
+    padding-top: 180px;
+    padding: 20px;
+
+}
+
+
+/* Baixe Nosso App */
+
+.app{
+    height: 500px;
+    padding: 30px;
+    
+ }
+
+ .imgcel{
+    
+    margin-bottom: 50px;
+ }
+ 
+
+/*Mapa*/
+.mapa{
+    height: 450px;
+    padding: 30px;
+    margin-top: 250px;
+	
+    
+
+}
+.texto h2{
+	padding: 7px;
+
+}
+h2{
+	font-size: 20px;
+}
+
+.clmapa{
+    padding: 20px;
+}
+
+/*Historia*/
+
+.barber{
+    height: 350px;
+    padding-top: 40px;
+    margin-top: 180px;
+    margin-left: 64px;
+    
+}
+
+.texthist{
+    padding-top: 25px;
+}
+
+/* TIme - Profissionais */
+
+
+.time1 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card1 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    cursor: pointer;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card1:hover {
+    background-image: linear-gradient(#FFEC65, #E6D44E);
+}
+
+.card1 .img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+   /* background-image: url('../img/barber1.jpg');*/
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card1 .img span {
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #696969;
+}
+
+.card2 .img span {
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #FCF223;
+}
+
+.card3 .img span {
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #FCF223;
+}
+.card4 .img span {
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: #FCF223;
+}
+.card1:hover .img {
+    width: 280px;
+    opacity: 1;
+}
+
+.card1:hover .img span {
+    font-size: 20px;
+}
+
+.card1 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card1:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card1 .content p {
+    margin: 0;
+    color: black;
+}
+
+.card1 .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card1 .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card1 .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card1:hover .arrow {
+    transform: rotate(0);
+}
+
+.card1 .arrow span {
+    font-size: 24px;
+}
+
+
+/* Footer */
+footer{
+	background: black;
+	padding: 25px 0;
+}
+
+footer p{
+   color: #fff;
+   font-size: 16px;
+}
+
+ 
+
+
